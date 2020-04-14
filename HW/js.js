@@ -3,7 +3,7 @@ function getPage(pageOption, searchOption, seriesOption, movieOption, episodeOpt
     if (seriesOption === true) res += "&type=series"
     if (movieOption === true) res += "&type=movie"
     if (episodeOption === true) res += "&type=episode"
-    let url = `http://www.omdbapi.com/?${res}&apikey=a170dfba`
+    let url = `https://www.omdbapi.com/?${res}&apikey=a170dfba`
     fetch(url)
         .then((response) => response.json())
         .then(function (data) {
