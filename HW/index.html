@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film-o-man</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="input">
+            <input type="text" id="search" class="input__text" placeholder="Search...">
+            <button id="searchStart" class="input__button">Go</button>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="series"> Series
+            </label>
+            <label>
+                <input type="checkbox" id="movie"> Movie
+            </label>
+
+            <label>
+                <input type="checkbox" id="episode"> Episode
+            </label>
+        </div>
+    </header>
+    <main class="content-container">
+
+        <div class="content-block" id="content">
+
+            <h1 class="start_text">
+                Start searching...
+            </h1>
+
+        </div>
+        <div id="pages">
+
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
