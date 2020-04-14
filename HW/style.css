@@ -2,7 +2,7 @@ body {
   background-image: url(./img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -143,6 +143,12 @@ header {
   display: flex;
 }
 
+@media screen and (max-width: 1050px) {
+  .content-block {
+    width: 100%;
+  }
+}
+
 .content-item {
   width: 40%;
   margin: 15px;
@@ -236,5 +242,20 @@ header {
   background-color: rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: #eeeeee 10px 10px 50px;
           box-shadow: #eeeeee 10px 10px 50px;
+}
+
+@media screen and (max-width: 1050px) {
+  .pages__button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pages__button {
+    padding: 10px;
+    margin-right: 1px;
+    font-size: 17px;
+    margin-left: 1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

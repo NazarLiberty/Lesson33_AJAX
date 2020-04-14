@@ -2,7 +2,7 @@ body{
     background-image: url(./img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 header{
@@ -93,6 +93,10 @@ header{
     box-shadow: 0 0 30px rgba(66, 62, 59, 0.521);
     &--active{
         display: flex;
+
+    }
+    @media screen and (max-width:1050px) {
+        width: 100%;
     }
 
 }
@@ -163,6 +167,15 @@ object-fit: contain;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.39);
         box-shadow: rgb(238, 238, 238) 10px 10px 50px;
+    }
+    @media screen and (max-width:1050px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width:768px) {
+        padding: 10px;
+        margin-right: 1px;
+        font-size: 17px;
+   margin-left: 1px;
     }
    
 }
