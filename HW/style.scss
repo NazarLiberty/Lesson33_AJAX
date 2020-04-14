@@ -2,6 +2,7 @@ body{
     background-image: url(./img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     
 }
 header{
@@ -37,7 +38,10 @@ header{
         border: 0;
         background-color: rgba(0, 0, 0, 0.911);
         height: 72px;
-        width: 10%;
+        width: 12%;
+        @media screen and (max-width:576px) {
+            width: 30%;
+        }
     }
 }
 .checkbox{
@@ -48,10 +52,18 @@ header{
     font-family: monospace;
     color: white;
     font-weight: bold;
+    @media screen and (max-width:576px){
+        flex-direction: column;
+        
+    }
     & label{
         transition: ease .5s all;
         margin-left: 15px;
         margin-right: 15px;
+        @media screen and (max-width:576px){
+         margin-top: 10px;
+         margin-bottom: 10px;   
+        }
     }
     & label:hover{
        
