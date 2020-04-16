@@ -36,11 +36,17 @@ function getPage(pageOption, searchOption, seriesOption, movieOption, episodeOpt
                     })
 
                     for (let i = 0; i < data['totalResults'] / 10; i++) {
-                        $('#pages').append(`<span class="pages__button"> ${i + 1} </span>`)
+                        if (pageOption == i + 1) {
+                            $('#pages').append(`<span class="pages__button pages__button--active"> ${i + 1} </span>`)
+                        }
+                        else $('#pages').append(`<span class="pages__button"> ${i + 1} </span>`)
+
                     }
+
                     $('.pages__button').on('click', function () {
                         let _number = Number($(this).html())
                         getPage(_number, val, series, movie, episode);
+
                     })
                 }
             }

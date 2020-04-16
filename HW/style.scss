@@ -163,6 +163,11 @@ object-fit: contain;
    margin-left: 10px;
    padding: 15px;
     color: rgb(231, 231, 231);
+    &--active{
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.39);
+        box-shadow: rgb(238, 238, 238) 10px 10px 50px;
+    }
     &:hover{
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.39);

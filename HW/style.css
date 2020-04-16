@@ -237,6 +237,13 @@ header {
   color: #e7e7e7;
 }
 
+.pages__button--active {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: #eeeeee 10px 10px 50px;
+          box-shadow: #eeeeee 10px 10px 50px;
+}
+
 .pages__button:hover {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.39);
