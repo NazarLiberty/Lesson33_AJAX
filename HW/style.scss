@@ -6,6 +6,7 @@ body{
     
 }
 header{
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -17,7 +18,7 @@ header{
 .input{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 65%;
     height: 100px;
     &__text{
         border: white 2px solid;
@@ -27,7 +28,7 @@ header{
         font-size: 30px;
         padding-left: 20px;
         height: 70px;
-        width: 80%;
+        width: 85%;
         
     }
     &__button{
@@ -38,14 +39,13 @@ header{
         border: 0;
         background-color: rgba(0, 0, 0, 0.911);
         height: 72px;
-        width: 12%;
+        width: 15%;
         @media screen and (max-width:576px) {
             width: 30%;
         }
     }
 }
 .checkbox{
-    
     margin-top: 20px;
     display: flex;
     font-size: 30px;
@@ -66,16 +66,13 @@ header{
         }
     }
     & label:hover{
-       
-            border-radius: 50%;
-            background-color: rgba(238, 238, 238, 0.199);
             cursor: pointer;
-            box-shadow: rgb(238, 238, 238) 10px 10px 50px;
-        
+            font-size: 1.2em; 
     }
 }
 
 .content-container{
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -83,18 +80,17 @@ header{
     align-items: center;
 }
 .content-block{
-    display: none;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 1000px;
     border: 1px rgba(0, 0, 0, 0.377) solid;
     background-color: rgba(0, 0, 0, 0.925);
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(66, 62, 59, 0.521);
-    &--active{
-        display: flex;
 
-    }
     @media screen and (max-width:1050px) {
         width: 100%;
     }
@@ -108,24 +104,63 @@ header{
     align-items: center;
 }
 .item-img{
-
 max-width: 100%;
 object-fit: contain;
+}
+.item-img-b{ 
+ position: relative;
+}
+.item-fav{
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .item-info{
     display: none;
     color: white;
     font-size: 25px;
 }
-.start_text{
+.favorite{
+    transition: linear .5s all;
     color: rgba(255, 255, 255, 0.534);
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 34px;
     font-family: fantasy;
     letter-spacing: 3px;
     font-weight: 100;
+    &:hover{
+        cursor: pointer;
+        font-size: 38px;
+        color: rgba(255, 251, 10, 0.685);
+    }
+    &--small{
+        letter-spacing: 1px;
+        color: rgba(255, 238, 0, 0.932);
+        text-transform: uppercase;
+        width: 100%;
+        padding: 15px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.712);
+        border-radius: 20px;
+        &:hover{
+            
+            cursor: pointer;
+            font-size: 30px;
+
+        }
+    }
 }
 .item-button{
     cursor: pointer;
@@ -183,4 +218,7 @@ object-fit: contain;
    margin-left: 1px;
     }
    
+}
+.fav--active{
+    fill: yellow;
 }
